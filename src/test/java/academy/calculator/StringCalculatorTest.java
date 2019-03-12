@@ -31,4 +31,10 @@ class StringCalculatorTest {
         String input = "//[***][%]\n1***2%3,2000";
         assertEquals(6, calculator.add(input));
     }
+
+    @Test
+    void testSomeDelimiters() {
+        String input = "1,2,3";
+        assertEquals(6, calculator.add(input));
+    }
 }
